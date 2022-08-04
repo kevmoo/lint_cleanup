@@ -1,0 +1,13 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+linter:
+  rules:
+  - avoid_dynamic_calls
+  - use_super_parameters
+  - prefer_expression_function_bodies
