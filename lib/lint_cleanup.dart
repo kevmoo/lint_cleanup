@@ -67,9 +67,16 @@ _LintBundle _lintsFromFile(String path, PackageConfig packageConfig) {
 
   final explicit = <String>{};
   if (linterValue != null) {
-    final rulesValue = linterValue['rules'] as List?;
-    if (rulesValue != null) {
+    final rulesValue = linterValue['rules'];
+    if (rulesValue is YamlList) {
       explicit.addAll(rulesValue.cast<String>());
+    }
+    if (rulesValue is YamlMap) {
+      for (final rule in rulesValue.entries) {
+        if (rule.value == true) {
+          explicit.add(rule.key as String);
+        }
+      }
     }
   }
 
