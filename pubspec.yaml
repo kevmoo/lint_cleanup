@@ -6,10 +6,12 @@ environment:
 dependencies:
   args: ^2.3.1
   collection: ^1.16.0
+  io: ^1.0.0
   package_config: ^2.1.0
   path: ^1.8.0
   pub_semver: ^2.1.1
   yaml: ^3.1.1
+  yaml_edit: ^2.0.0
 
 dev_dependencies:
   dart_flutter_team_lints: ^0.1.0

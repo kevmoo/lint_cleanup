@@ -8,6 +8,5 @@ analyzer:
 
 linter:
   rules:
-  - avoid_dynamic_calls
   - use_super_parameters
   - prefer_expression_function_bodies
