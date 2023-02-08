@@ -100,7 +100,7 @@ _LintBundle _analysisOptionsFromPackage(
   PackageConfig packageConfig,
 ) {
   if (!includeUri.isScheme('package')) {
-    throw '`$includeUri` is not a package!';
+    throw ArgumentError('`$includeUri` is not a package!');
   }
 
   final pkg = includeUri.pathSegments.first;
