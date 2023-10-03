@@ -8,5 +8,4 @@ analyzer:
 
 linter:
   rules:
-  - use_super_parameters
   - prefer_expression_function_bodies
